@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Human Wildlife Conflict Prediction App">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="HWC Alert">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <title>HWC Alert</title>
+  <link rel="manifest" href="manifest.json">
+  <script>
+    // Firebase initialization
+    window.flutterWebRenderer = "html";
+  </script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js';
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyABrSVkvce2iVC4zSC4MfI-fgPzF12DgLA",
+      authDomain: "hwc-alert-499711.firebaseapp.com",
+      projectId: "hwc-alert-499711",
+      storageBucket: "hwc-alert-499711.firebasestorage.app",
+      messagingSenderId: "855616726627",
+      appId: "1:855616726627:web:ba0901e2941463857efa56",
+      measurementId: "G-GZPN81G9KK"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    window.firebaseApp = app;
+  </script>
+</body>
+</html>

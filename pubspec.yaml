@@ -1,0 +1,28 @@
+name: hwc_app
+description: Human Wildlife Conflict Prediction App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.27.0
+  firebase_auth: ^4.17.0
+  geolocator: ^11.0.0
+  permission_handler: ^11.3.0
+  flutter_local_notifications: ^17.1.2
+  http: ^1.2.1
+  cupertino_icons: ^1.0.6
+  pinput: ^3.0.1
+  web: ^0.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
